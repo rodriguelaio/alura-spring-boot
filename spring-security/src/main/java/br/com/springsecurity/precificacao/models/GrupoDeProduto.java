@@ -14,7 +14,7 @@ import javax.validation.constraints.NotBlank;
 @AllArgsConstructor
 @Setter
 @Getter
-public class GrupoDeProdutos {
+public class GrupoDeProduto {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

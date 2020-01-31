@@ -1,4 +1,4 @@
-package br.com.springsecurity.naosei.models;
+package br.com.springsecurity.precificacao.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;

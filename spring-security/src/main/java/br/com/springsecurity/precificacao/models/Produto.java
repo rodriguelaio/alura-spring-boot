@@ -1,5 +1,6 @@
-package br.com.springsecurity.naosei.models;
+package br.com.springsecurity.precificacao.models;
 
+import br.com.springsecurity.precificacao.enums.TipoDeProdutos;
 import lombok.*;
 
 import javax.persistence.Entity;
@@ -24,5 +25,8 @@ public class Produto {
     private String nome;
 
     @NotBlank
-    
+    private TipoDeProdutos tipoDeProdutos;
+
+    @NotBlank
+    private GrupoDeProduto grupoDeProduto;
 }
