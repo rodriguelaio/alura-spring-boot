@@ -3,7 +3,9 @@ package br.com.springsecurity.naosei.models;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.validation.constraints.NotBlank;
 
 @Entity
@@ -12,10 +14,9 @@ import javax.validation.constraints.NotBlank;
 @AllArgsConstructor
 @Setter
 @Getter
-public class Cliente {
+public class Usuario {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @NotBlank
@@ -28,9 +29,4 @@ public class Cliente {
     @NotBlank
     @JsonIgnore
     private String password;
-
-    public void setIdAsNull(){
-        this.id = null;
-    }
-
 }
