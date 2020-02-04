@@ -1,9 +1,12 @@
 package br.com.springsecurity.precificacao.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 
 import javax.persistence.*;
 import java.util.List;
+
+import static org.springframework.util.CollectionUtils.isEmpty;
 
 @Entity
 @Builder
@@ -20,6 +23,14 @@ public class Gerente extends Pessoa{
     @JoinTable(name = "gerente_grupo_de_produto", //nome da tabela que receberá a relação entre gerente x grupo
             joinColumns = @JoinColumn(name = "id_gerente"), //nome da coluna de dominio da relação
             inverseJoinColumns = @JoinColumn(name = "id_grupo_de_produto")) //nome da coluna dominada da relação
-    private List<GrupoDeProduto> grupoDeProduto;
+    private List<GrupoDeProdutos> gruposDeProduto;
 
+    @JsonIgnore
+    public boolean isGruposDeProdutoEmpty(){
+        return isEmpty(this.gruposDeProduto);
+    }
+
+//    public List<GrupoDeProduto> getGruposDeProduto() {
+//        return this.gruposDeProduto;
+//    }
 }

@@ -11,4 +11,6 @@ public interface GerenteRepository extends JpaRepository<Gerente, Long> {
 
     Optional<Gerente> findByNome(String nome);
 
+    void deleteById(Long id);
+
 }

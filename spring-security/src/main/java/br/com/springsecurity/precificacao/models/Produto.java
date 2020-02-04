@@ -28,5 +28,5 @@ public class Produto {
     private TipoDeProdutos tipoDeProdutos;
 
     @NotBlank
-    private GrupoDeProduto grupoDeProduto;
+    private GrupoDeProdutos grupoDeProdutos;
 }
