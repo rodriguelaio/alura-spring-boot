@@ -23,14 +23,10 @@ public class Gerente extends Pessoa{
     @JoinTable(name = "gerente_grupo_de_produto", //nome da tabela que receberá a relação entre gerente x grupo
             joinColumns = @JoinColumn(name = "id_gerente"), //nome da coluna de dominio da relação
             inverseJoinColumns = @JoinColumn(name = "id_grupo_de_produto")) //nome da coluna dominada da relação
-    private List<GrupoDeProdutos> gruposDeProduto;
+    private List<GrupoDeProdutos> gruposDeProdutos;
 
     @JsonIgnore
-    public boolean isGruposDeProdutoEmpty(){
-        return isEmpty(this.gruposDeProduto);
+    public boolean isGruposDeProdutosEmpty(){
+        return isEmpty(this.gruposDeProdutos);
     }
-
-//    public List<GrupoDeProduto> getGruposDeProduto() {
-//        return this.gruposDeProduto;
-//    }
 }

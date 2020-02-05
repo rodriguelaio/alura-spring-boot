@@ -10,7 +10,6 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -51,22 +50,22 @@ public class GerenteServiceImplementation implements GerenteService {
     }
 
     private void validarGruposDeProduto(Gerente gerente){
-        if (gerente.isGruposDeProdutoEmpty()) return;
+        if (gerente.isGruposDeProdutosEmpty()) return;
         percorrerListaDeGruposDeProduto(gerente);
     }
 
     private void percorrerListaDeGruposDeProduto(Gerente gerente){
         List<GrupoDeProdutos> listaDeGruposDeProdutos = new ArrayList<>();
-        for(GrupoDeProdutos grupoDeProdutos : gerente.getGruposDeProduto()){
+        for(GrupoDeProdutos grupoDeProdutos : gerente.getGruposDeProdutos()){
             listaDeGruposDeProdutos.add(validarSeGrupoDeProdutosFoiPersistido(grupoDeProdutos));
         }
-        gerente.setGruposDeProduto(listaDeGruposDeProdutos);
+        gerente.setGruposDeProdutos(listaDeGruposDeProdutos);
     }
 
     private GrupoDeProdutos validarSeGrupoDeProdutosFoiPersistido(GrupoDeProdutos grupoDeProdutos){
-        if(this.grupoDeProdutosService.findById(grupoDeProdutos.getId()).isPresent()){
-            return this.grupoDeProdutosService.findById(grupoDeProdutos.getId()).get();
+        if(grupoDeProdutosService.findById(grupoDeProdutos.getId()).isPresent()){
+            return grupoDeProdutosService.findById(grupoDeProdutos.getId()).get();
         }
-        return this.grupoDeProdutosService.save(grupoDeProdutos);
+        return grupoDeProdutosService.save(grupoDeProdutos);
     }
 }

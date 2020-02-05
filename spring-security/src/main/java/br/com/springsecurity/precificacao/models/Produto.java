@@ -1,8 +1,8 @@
 package br.com.springsecurity.precificacao.models;
 
 import br.com.springsecurity.precificacao.enums.TipoDeProdutos;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -29,4 +29,13 @@ public class Produto {
 
     @NotBlank
     private GrupoDeProdutos grupoDeProdutos;
+
+    @JsonIgnore
+    public boolean isGrupoDeProdutosEmpty(){
+        return this.grupoDeProdutos.equals(null);
+    }
+
+    public void setIdAsNull() {
+        this.id = null;
+    }
 }
