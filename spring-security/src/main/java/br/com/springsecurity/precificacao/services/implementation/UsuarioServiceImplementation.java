@@ -1,12 +1,13 @@
 package br.com.springsecurity.precificacao.services.implementation;
 
 import br.com.springsecurity.precificacao.models.Usuario;
-import br.com.springsecurity.precificacao.repository.UsuarioRepository;
+import br.com.springsecurity.precificacao.repositories.UsuarioRepository;
 import br.com.springsecurity.precificacao.services.UsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Optional;
 
@@ -41,11 +42,13 @@ public class UsuarioServiceImplementation implements UsuarioService {
     }
 
     @Override
+    @Transactional
     public Usuario save(Usuario usuario) {
         return usuarioRepository.save(usuario);
     }
 
     @Override
+    @Transactional
     public void deleteById(Long id) {
         usuarioRepository.deleteById(id);
     }

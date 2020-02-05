@@ -11,11 +11,14 @@ import java.util.Optional;
 public interface ProdutoService {
 
     Optional<Produto> findById(Long id);
+
     Optional<Produto> findByNome(String nome);
 
-    Page<Optional<Produto>> findByTipo(Pageable pageable, TipoDeProdutos tipoDeProdutos);
-    Page<Optional<Produto>> findByGrupo(Pageable pageable, GrupoDeProdutos grupoDeProdutos);
     Page<Produto> findAll(Pageable pageable);
+
+    Page<Optional<Produto>> findByTipo(Pageable pageable, TipoDeProdutos tipoDeProdutos);
+
+    Page<Optional<Produto>> findByGrupo(Pageable pageable, GrupoDeProdutos grupoDeProdutos);
 
     Produto save(Produto produto);
 

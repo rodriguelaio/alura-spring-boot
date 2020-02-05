@@ -2,7 +2,7 @@ package br.com.springsecurity.precificacao.services.implementation;
 
 import br.com.springsecurity.precificacao.models.Gerente;
 import br.com.springsecurity.precificacao.models.GrupoDeProdutos;
-import br.com.springsecurity.precificacao.repository.GerenteRepository;
+import br.com.springsecurity.precificacao.repositories.GerenteRepository;
 import br.com.springsecurity.precificacao.services.GerenteService;
 import br.com.springsecurity.precificacao.services.GrupoDeProdutosService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,13 +27,28 @@ public class GerenteServiceImplementation implements GerenteService {
     }
 
     @Override
-    public Page<Gerente> findAll(Pageable pageable) {
-        return gerenteRepository.findAll(pageable);
+    public Optional<Gerente> findById(Long id){
+        return gerenteRepository.findById(id);
     }
 
     @Override
     public Optional<Gerente> findByNome(String nome) {
         return gerenteRepository.findByNome(nome);
+    }
+
+    @Override
+    public Optional<Gerente> findByProdutoId(Long produtoId){
+        return gerenteRepository.findByProdutoId(produtoId);
+    }
+
+    @Override
+    public Page<Gerente> findAll(Pageable pageable) {
+        return gerenteRepository.findAll(pageable);
+    }
+
+    @Override
+    public Page<Gerente> findByGrupoDeProdutosId(Pageable pageable, Long grupoDeProdutosId){
+        return gerenteRepository.findByGrupoDeProdutosId(pageable, grupoDeProdutosId);
     }
 
     @Override
@@ -45,6 +60,7 @@ public class GerenteServiceImplementation implements GerenteService {
     }
 
     @Override
+    @Transactional
     public void deleteById(Long id) {
         gerenteRepository.deleteById(id);
     }

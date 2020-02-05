@@ -1,4 +1,4 @@
-package br.com.springsecurity.precificacao.repository;
+package br.com.springsecurity.precificacao.repositories;
 
 import br.com.springsecurity.precificacao.models.Usuario;
 import org.springframework.data.jpa.repository.JpaRepository;

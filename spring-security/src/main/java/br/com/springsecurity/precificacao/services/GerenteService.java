@@ -8,12 +8,17 @@ import java.util.Optional;
 
 public interface GerenteService {
 
-    Page<Gerente> findAll(Pageable pageable);
+    Optional<Gerente> findById(Long id);
 
     Optional<Gerente> findByNome(String nome);
+
+    Optional<Gerente> findByProdutoId(Long produtoId);
+
+    Page<Gerente> findAll(Pageable pageable);
+
+    Page<Gerente> findByGrupoDeProdutosId(Pageable pageable, Long grupoDeProdutosId);
 
     Gerente save(Gerente gerente);
 
     void deleteById(Long id);
-
 }

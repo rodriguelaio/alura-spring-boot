@@ -3,13 +3,14 @@ package br.com.springsecurity.precificacao.services.implementation;
 import br.com.springsecurity.precificacao.enums.TipoDeProdutos;
 import br.com.springsecurity.precificacao.models.GrupoDeProdutos;
 import br.com.springsecurity.precificacao.models.Produto;
-import br.com.springsecurity.precificacao.repository.ProdutoRepository;
+import br.com.springsecurity.precificacao.repositories.ProdutoRepository;
 import br.com.springsecurity.precificacao.services.GrupoDeProdutosService;
 import br.com.springsecurity.precificacao.services.ProdutoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Optional;
 
@@ -51,6 +52,7 @@ public class ProdutoServiceImplementation implements ProdutoService {
     }
 
     @Override
+    @Transactional
     public Produto save(Produto produto) {
         produto.setIdAsNull();
         validarGruposDeProduto(produto);
@@ -58,6 +60,7 @@ public class ProdutoServiceImplementation implements ProdutoService {
     }
 
     @Override
+    @Transactional
     public void deleteById(Long id) {
         produtoRepository.deleteById(id);
     }

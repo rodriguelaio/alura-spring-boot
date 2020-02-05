@@ -1,12 +1,13 @@
 package br.com.springsecurity.precificacao.services.implementation;
 
 import br.com.springsecurity.precificacao.models.GrupoDeProdutos;
-import br.com.springsecurity.precificacao.repository.GrupoDeProdutosRepository;
+import br.com.springsecurity.precificacao.repositories.GrupoDeProdutosRepository;
 import br.com.springsecurity.precificacao.services.GrupoDeProdutosService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Optional;
 
@@ -31,11 +32,13 @@ public class GrupoDeProdutosServiceImplementation implements GrupoDeProdutosServ
     }
 
     @Override
+    @Transactional
     public GrupoDeProdutos save(GrupoDeProdutos grupoDeProdutos) {
         return this.grupoDeProdutosRepository.save(grupoDeProdutos);
     }
 
     @Override
+    @Transactional
     public void deleteById(Long id) {
         this.grupoDeProdutosRepository.deleteById(id);
     }

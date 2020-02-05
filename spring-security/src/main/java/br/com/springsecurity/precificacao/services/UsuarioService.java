@@ -7,9 +7,13 @@ import org.springframework.data.domain.Pageable;
 import java.util.Optional;
 
 public interface UsuarioService {
+
     Optional<Usuario> findById(Long id);
+
     Optional<Usuario> findByNome(String nome);
+
     Optional<Usuario> findByUsername(String username);
+
     Page<Usuario> findAll(Pageable pageable);
 
     Usuario save(Usuario usuario);

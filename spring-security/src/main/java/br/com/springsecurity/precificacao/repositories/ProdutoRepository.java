@@ -1,4 +1,4 @@
-package br.com.springsecurity.precificacao.repository;
+package br.com.springsecurity.precificacao.repositories;
 
 import br.com.springsecurity.precificacao.enums.TipoDeProdutos;
 import br.com.springsecurity.precificacao.models.GrupoDeProdutos;
