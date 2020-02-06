@@ -15,8 +15,9 @@ public interface ProdutoRepository extends JpaRepository<Produto, Long> {
 
     Optional<Produto> findByNome(String nome);
 
-    Page<Optional<Produto>> findByTipo(Pageable pageable, TipoDeProdutos tipoDeProduto);
+    //utilizar sempre o nome exato do atributo. Dessa forma o JPA ja cria as devidas amarrações
+    Page<Optional<Produto>> findByTipoDeProdutos(Pageable pageable, TipoDeProdutos tipoDeProduto);
 
-    Page<Optional<Produto>> findByGrupo(Pageable pageable, GrupoDeProdutos grupoDeProdutos);
+    Page<Optional<Produto>> findByGrupoDeProdutosId(Pageable pageable, Long id);
 
 }

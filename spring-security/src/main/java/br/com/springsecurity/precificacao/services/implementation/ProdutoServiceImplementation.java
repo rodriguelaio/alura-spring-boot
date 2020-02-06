@@ -37,13 +37,13 @@ public class ProdutoServiceImplementation implements ProdutoService {
     }
 
     @Override
-    public Page<Optional<Produto>> findByTipo(Pageable pageable, TipoDeProdutos tipoDeProdutos) {
-        return produtoRepository.findByTipo(pageable, tipoDeProdutos);
+    public Page<Optional<Produto>> findByTipoDeProdutos(Pageable pageable, TipoDeProdutos tipoDeProdutos) {
+        return produtoRepository.findByTipoDeProdutos(pageable, tipoDeProdutos);
     }
 
     @Override
-    public Page<Optional<Produto>> findByGrupo(Pageable pageable, GrupoDeProdutos grupoDeProdutos) {
-        return produtoRepository.findByGrupo(pageable, grupoDeProdutos);
+    public Page<Optional<Produto>> findByGrupoDeProdutosId(Pageable pageable, Long id) {
+        return produtoRepository.findByGrupoDeProdutosId(pageable, id);
     }
 
     @Override

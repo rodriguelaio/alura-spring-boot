@@ -47,8 +47,8 @@ public class GerenteServiceImplementation implements GerenteService {
     }
 
     @Override
-    public Page<Gerente> findByGrupoDeProdutosId(Pageable pageable, Long grupoDeProdutosId){
-        return gerenteRepository.findByGrupoDeProdutosId(pageable, grupoDeProdutosId);
+    public Page<Gerente> findByGruposDeProdutosId(Pageable pageable, Long grupoDeProdutosId){
+        return gerenteRepository.findByGruposDeProdutosId(pageable, grupoDeProdutosId);
     }
 
     @Override

@@ -11,7 +11,7 @@ import javax.validation.constraints.NotBlank;
 @AllArgsConstructor
 @Setter
 @Getter
-@Table(name = "grupo_de_produtos")
+//@Table(name = "grupo_de_produtos")
 public class GrupoDeProdutos {
 
     @Id

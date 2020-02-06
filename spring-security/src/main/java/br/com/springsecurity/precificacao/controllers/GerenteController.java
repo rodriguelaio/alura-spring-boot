@@ -43,8 +43,8 @@ public class GerenteController {
     }
 
     @GetMapping("/grupoDeProdutosId/{grupoDeProdutosId}")
-    public ResponseEntity<Page<Gerente>> findByGrupoDeProdutosId(Pageable pageable, Long grupoDeProdutosId){
-        return ResponseEntity.ok(gerenteService.findByGrupoDeProdutosId(pageable, grupoDeProdutosId));
+    public ResponseEntity<Page<Gerente>> findByGruposDeProdutosId(Pageable pageable, Long grupoDeProdutosId){
+        return ResponseEntity.ok(gerenteService.findByGruposDeProdutosId(pageable, grupoDeProdutosId));
     }
 
     @PostMapping

@@ -13,10 +13,10 @@ public interface GerenteRepository extends JpaRepository<Gerente, Long> {
 
     Optional<Gerente> findByNome(String nome);
 
+    //utilizar sempre o nome exato do atributo. Dessa forma o JPA ja cria as devidas amarrações
     Optional<Gerente> findByProdutoId(Long produtoId);
 
-    Page<Gerente> findByGrupoDeProdutosId(Pageable pageable, Long grupoDeProdutosId);
+    Page<Gerente> findByGruposDeProdutosId(Pageable pageable, Long grupoDeProdutosId);
 
     void deleteById(Long id);
-
 }

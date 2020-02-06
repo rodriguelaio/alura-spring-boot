@@ -16,7 +16,7 @@ public interface GerenteService {
 
     Page<Gerente> findAll(Pageable pageable);
 
-    Page<Gerente> findByGrupoDeProdutosId(Pageable pageable, Long grupoDeProdutosId);
+    Page<Gerente> findByGruposDeProdutosId(Pageable pageable, Long grupoDeProdutosId);
 
     Gerente save(Gerente gerente);
 

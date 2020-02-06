@@ -16,9 +16,9 @@ public interface ProdutoService {
 
     Page<Produto> findAll(Pageable pageable);
 
-    Page<Optional<Produto>> findByTipo(Pageable pageable, TipoDeProdutos tipoDeProdutos);
+    Page<Optional<Produto>> findByTipoDeProdutos(Pageable pageable, TipoDeProdutos tipoDeProdutos);
 
-    Page<Optional<Produto>> findByGrupo(Pageable pageable, GrupoDeProdutos grupoDeProdutos);
+    Page<Optional<Produto>> findByGrupoDeProdutosId(Pageable pageable, Long id);
 
     Produto save(Produto produto);
 
