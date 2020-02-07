@@ -21,8 +21,8 @@ public class Gerente extends Pessoa{
 
     @ManyToMany
     @JoinTable(name = "gerente_grupo_de_produto", //nome da tabela que receberá a relação entre gerente x grupo
-            joinColumns = @JoinColumn(name = "id_gerente"), //nome da coluna de dominio da relação
-            inverseJoinColumns = @JoinColumn(name = "id_grupo_de_produto")) //nome da coluna dominada da relação
+            joinColumns = @JoinColumn(name = "gerente_id"), //nome da coluna de dominio da relação
+            inverseJoinColumns = @JoinColumn(name = "grupo_de_produto_id")) //nome da coluna dominada da relação
     private List<GrupoDeProdutos> gruposDeProdutos;
 
     @JsonIgnore
