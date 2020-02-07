@@ -18,7 +18,7 @@ public class Pessoa implements Serializable {
     private Long id;
 
     @NotBlank
-    private String nome;
+    private String nomeCompleto;
 
     public void setIdAsNull() {
         this.id = null;

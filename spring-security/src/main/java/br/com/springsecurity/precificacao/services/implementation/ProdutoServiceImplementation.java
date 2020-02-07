@@ -27,23 +27,23 @@ public class ProdutoServiceImplementation implements ProdutoService {
     }
 
     @Override
-    public Optional<Produto> findById(Long id) {
-        return produtoRepository.findById(id);
+    public Optional<Produto> findById(Long produtoId) {
+        return produtoRepository.findById(produtoId);
     }
 
     @Override
-    public Optional<Produto> findByNome(String nome) {
-        return produtoRepository.findByNome(nome);
+    public Optional<Produto> findByNome(String nomeDoProduto) {
+        return produtoRepository.findByNome(nomeDoProduto);
     }
 
     @Override
-    public Page<Optional<Produto>> findByTipoDeProdutos(Pageable pageable, TipoDeProdutos tipoDeProdutos) {
+    public Page<Produto> findByTipoDeProdutos(Pageable pageable, TipoDeProdutos tipoDeProdutos) {
         return produtoRepository.findByTipoDeProdutos(pageable, tipoDeProdutos);
     }
 
     @Override
-    public Page<Optional<Produto>> findByGrupoDeProdutosId(Pageable pageable, Long id) {
-        return produtoRepository.findByGrupoDeProdutosId(pageable, id);
+    public Page<Produto> findByGrupoDeProdutosId(Pageable pageable, Long grupoDeProdutosId) {
+        return produtoRepository.findByGrupoDeProdutosId(pageable, grupoDeProdutosId);
     }
 
     @Override
@@ -61,8 +61,8 @@ public class ProdutoServiceImplementation implements ProdutoService {
 
     @Override
     @Transactional
-    public void deleteById(Long id) {
-        produtoRepository.deleteById(id);
+    public void deleteById(Long produtoId) {
+        produtoRepository.deleteById(produtoId);
     }
 
     private void validarGruposDeProduto(Produto produto){

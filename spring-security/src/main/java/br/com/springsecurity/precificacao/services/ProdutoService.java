@@ -10,17 +10,17 @@ import java.util.Optional;
 
 public interface ProdutoService {
 
-    Optional<Produto> findById(Long id);
+    Optional<Produto> findById(Long produtoId);
 
-    Optional<Produto> findByNome(String nome);
+    Optional<Produto> findByNome(String nomeDoProduto);
 
     Page<Produto> findAll(Pageable pageable);
 
-    Page<Optional<Produto>> findByTipoDeProdutos(Pageable pageable, TipoDeProdutos tipoDeProdutos);
+    Page<Produto> findByTipoDeProdutos(Pageable pageable, TipoDeProdutos tipoDeProdutos);
 
-    Page<Optional<Produto>> findByGrupoDeProdutosId(Pageable pageable, Long id);
+    Page<Produto> findByGrupoDeProdutosId(Pageable pageable, Long grupoDeProdutosId);
 
     Produto save(Produto produto);
 
-    void deleteById(Long id);
+    void deleteById(Long produtoId);
 }

@@ -22,13 +22,13 @@ public class UsuarioServiceImplementation implements UsuarioService {
     }
 
     @Override
-    public Optional<Usuario> findById(Long id) {
-        return usuarioRepository.findById(id);
+    public Optional<Usuario> findById(Long usuarioId) {
+        return usuarioRepository.findById(usuarioId);
     }
 
     @Override
-    public Optional<Usuario> findByNome(String nome) {
-        return usuarioRepository.findByNome(nome);
+    public Optional<Usuario> findByNomeCompleto(String nomeCompletoDoUsuario) {
+        return usuarioRepository.findByNomeCompleto(nomeCompletoDoUsuario);
     }
 
     @Override
@@ -49,7 +49,7 @@ public class UsuarioServiceImplementation implements UsuarioService {
 
     @Override
     @Transactional
-    public void deleteById(Long id) {
-        usuarioRepository.deleteById(id);
+    public void deleteById(Long usuarioId) {
+        usuarioRepository.deleteById(usuarioId);
     }
 }

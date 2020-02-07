@@ -21,19 +21,20 @@ public class GerenteServiceImplementation implements GerenteService {
     private final GrupoDeProdutosService grupoDeProdutosService;
 
     @Autowired
-    public GerenteServiceImplementation(GerenteRepository gerenteRepository, GrupoDeProdutosService grupoDeProdutosService){
+    public GerenteServiceImplementation(GerenteRepository gerenteRepository,
+                                        GrupoDeProdutosService grupoDeProdutosService){
         this.gerenteRepository = gerenteRepository;
         this.grupoDeProdutosService = grupoDeProdutosService;
     }
 
     @Override
-    public Optional<Gerente> findById(Long id){
-        return gerenteRepository.findById(id);
+    public Optional<Gerente> findById(Long gerenteId){
+        return gerenteRepository.findById(gerenteId);
     }
 
     @Override
-    public Optional<Gerente> findByNome(String nome) {
-        return gerenteRepository.findByNome(nome);
+    public Optional<Gerente> findByNomeCompleto(String nomeCompletoDogerente) {
+        return gerenteRepository.findByNomeCompleto(nomeCompletoDogerente);
     }
 
     @Override
@@ -61,8 +62,8 @@ public class GerenteServiceImplementation implements GerenteService {
 
     @Override
     @Transactional
-    public void deleteById(Long id) {
-        gerenteRepository.deleteById(id);
+    public void deleteById(Long gerenteId) {
+        gerenteRepository.deleteById(gerenteId);
     }
 
     private void validarGruposDeProduto(Gerente gerente){

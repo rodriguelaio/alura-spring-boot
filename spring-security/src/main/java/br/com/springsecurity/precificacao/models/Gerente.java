@@ -17,7 +17,8 @@ import static org.springframework.util.CollectionUtils.isEmpty;
 public class Gerente extends Pessoa{
 
     @OneToMany
-    private List<Produto> produto;
+    @JoinColumn(name = "gerente_id") //Desse modo, o hibernate não cria uma tabela intermediária para a amarração...
+    private List<Produto> produto; //...mas insere na tabela filha um campo que receberá o código pai
 
     @ManyToMany
     @JoinTable(name = "gerente_grupo_de_produto", //nome da tabela que receberá a relação entre gerente x grupo

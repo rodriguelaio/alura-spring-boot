@@ -9,12 +9,12 @@ import java.util.Optional;
 @Repository
 public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
 
-    Optional<Usuario> findByNome(String nome);
+    Optional<Usuario> findByNomeCompleto(String nomeCompletoDoUsuario);
 
     //utilizar sempre o nome exato do atributo. Dessa forma o JPA ja cria as devidas amarrações
     Optional<Usuario> findByUsername(String username);
 
     Usuario save(Usuario usuario);
 
-    void deleteById(Long id);
+    void deleteById(Long usuarioId);
 }

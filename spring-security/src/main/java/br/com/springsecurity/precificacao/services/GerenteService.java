@@ -8,9 +8,9 @@ import java.util.Optional;
 
 public interface GerenteService {
 
-    Optional<Gerente> findById(Long id);
+    Optional<Gerente> findById(Long gerenteId);
 
-    Optional<Gerente> findByNome(String nome);
+    Optional<Gerente> findByNomeCompleto(String nomeCompletoDoGerente);
 
     Optional<Gerente> findByProdutoId(Long produtoId);
 
@@ -20,5 +20,5 @@ public interface GerenteService {
 
     Gerente save(Gerente gerente);
 
-    void deleteById(Long id);
+    void deleteById(Long gerenteId);
 }

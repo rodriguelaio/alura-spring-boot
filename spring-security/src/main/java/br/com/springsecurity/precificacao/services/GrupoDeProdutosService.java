@@ -8,11 +8,11 @@ import java.util.Optional;
 
 public interface GrupoDeProdutosService {
 
-    Optional<GrupoDeProdutos> findById(Long id);
+    Optional<GrupoDeProdutos> findById(Long grupoDeProdutosId);
 
     Page<GrupoDeProdutos> findAll(Pageable pageable);
 
     GrupoDeProdutos save(GrupoDeProdutos grupoDeProdutos);
 
-    void deleteById(Long id);
+    void deleteById(Long grupoDeProdutosId);
 }

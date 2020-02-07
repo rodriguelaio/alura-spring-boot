@@ -13,13 +13,7 @@ import javax.validation.constraints.NotBlank;
 @AllArgsConstructor
 @Setter
 @Getter
-public class Usuario {
-
-    @Id
-    private Long id;
-
-    @NotBlank
-    private String nome;
+public class Usuario extends Pessoa {
 
     @NotBlank
     @Column(unique = true)

@@ -8,9 +8,9 @@ import java.util.Optional;
 
 public interface UsuarioService {
 
-    Optional<Usuario> findById(Long id);
+    Optional<Usuario> findById(Long usuarioId);
 
-    Optional<Usuario> findByNome(String nome);
+    Optional<Usuario> findByNomeCompleto(String nomeCompletoDoUsuario);
 
     Optional<Usuario> findByUsername(String username);
 
@@ -18,5 +18,5 @@ public interface UsuarioService {
 
     Usuario save(Usuario usuario);
 
-    void deleteById(Long id);
+    void deleteById(Long usuarioId);
 }

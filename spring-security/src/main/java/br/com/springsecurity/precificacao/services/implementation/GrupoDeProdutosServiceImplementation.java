@@ -22,8 +22,8 @@ public class GrupoDeProdutosServiceImplementation implements GrupoDeProdutosServ
     }
 
     @Override
-    public Optional<GrupoDeProdutos> findById(Long id){
-        return this.grupoDeProdutosRepository.findById(id);
+    public Optional<GrupoDeProdutos> findById(Long grupoDeProdutosId){
+        return this.grupoDeProdutosRepository.findById(grupoDeProdutosId);
     }
 
     @Override
@@ -39,7 +39,7 @@ public class GrupoDeProdutosServiceImplementation implements GrupoDeProdutosServ
 
     @Override
     @Transactional
-    public void deleteById(Long id) {
-        this.grupoDeProdutosRepository.deleteById(id);
+    public void deleteById(Long grupoDeProdutosId) {
+        this.grupoDeProdutosRepository.deleteById(grupoDeProdutosId);
     }
 }
