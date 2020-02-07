@@ -34,7 +34,7 @@ public class GrupoDeProdutosController {
     }
 
     @PostMapping
-    public ResponseEntity<GrupoDeProdutos> save(@Valid @PathVariable GrupoDeProdutos grupoDeProdutos){
+    public ResponseEntity<GrupoDeProdutos> save(@Valid @RequestBody GrupoDeProdutos grupoDeProdutos){
         return ResponseEntity.status(HttpStatus.CREATED).body(grupoDeProdutosService.save(grupoDeProdutos));
     }
 

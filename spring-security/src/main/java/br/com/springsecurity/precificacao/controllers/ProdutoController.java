@@ -40,17 +40,19 @@ public class ProdutoController {
     }
 
     @GetMapping("/tipo/{tipoDeProdutos}")
-    public ResponseEntity<Page<Produto>> findByTipoDeProduto(Pageable pageable, @PathVariable TipoDeProdutos tipoDeProdutos){
+    public ResponseEntity<Page<Produto>> findByTipoDeProduto(Pageable pageable,
+                                                             @PathVariable TipoDeProdutos tipoDeProdutos){
         return ResponseEntity.ok(produtoService.findByTipoDeProdutos(pageable, tipoDeProdutos));
     }
 
     @GetMapping("grupoDeProdutosId/{grupoDeProdutosId}")
-    public ResponseEntity<Page<Produto>> findByGrupoDeProdutosId(Pageable pageable, @PathVariable Long grupoDeProdutosId){
+    public ResponseEntity<Page<Produto>> findByGrupoDeProdutosId(Pageable pageable,
+                                                                 @PathVariable Long grupoDeProdutosId){
         return ResponseEntity.ok(produtoService.findByGrupoDeProdutosId(pageable, grupoDeProdutosId));
     }
 
     @PostMapping
-    public ResponseEntity<Produto> save(@Valid @PathVariable Produto produto){
+    public ResponseEntity<Produto> save(@Valid @RequestBody Produto produto){
         return ResponseEntity.status(HttpStatus.CREATED).body(produtoService.save(produto));
     }
 

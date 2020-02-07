@@ -44,7 +44,7 @@ public class UsuarioController {
     }
 
     @PostMapping
-    public ResponseEntity<Usuario> save(@Valid @PathVariable Usuario usuario){
+    public ResponseEntity<Usuario> save(@Valid @RequestBody Usuario usuario){
         return ResponseEntity.status(HttpStatus.CREATED).body(usuarioService.save(usuario));
     }
 

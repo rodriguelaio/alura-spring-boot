@@ -49,12 +49,13 @@ public class GerenteController {
     }
 
     @GetMapping("/grupoDeProdutosId/{grupoDeProdutosId}")
-    public ResponseEntity<Page<Gerente>> findByGruposDeProdutosId(Pageable pageable, @PathVariable Long grupoDeProdutosId){
+    public ResponseEntity<Page<Gerente>> findByGruposDeProdutosId(Pageable pageable,
+                                                                  @PathVariable Long grupoDeProdutosId){
         return ResponseEntity.ok(gerenteService.findByGruposDeProdutosId(pageable, grupoDeProdutosId));
     }
 
     @PostMapping
-    public ResponseEntity<Gerente> save(@Valid @PathVariable Gerente gerente){
+    public ResponseEntity<Gerente> save(@Valid @RequestBody Gerente gerente){
         return ResponseEntity.status(HttpStatus.CREATED).body(gerenteService.save(gerente));
     }
 
