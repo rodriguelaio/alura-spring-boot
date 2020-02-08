@@ -55,7 +55,7 @@ public class GerenteServiceImplementation implements GerenteService {
     @Override
     @Transactional
     public Gerente save(Gerente gerente) {
-        gerente.setIdAsNull();
+        gerente.setNewId(gerenteRepository.getGerenteMaxId());
         validarGruposDeProduto(gerente);
         return gerenteRepository.save(gerente);
     }

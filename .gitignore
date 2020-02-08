@@ -1,0 +1,16 @@
+
+spring-security/target/classes/br/com/springsecurity/precificacao/controllers/GrupoDeProdutosController.class
+
+spring-security/target/classes/br/com/springsecurity/precificacao/controllers/ProdutoController.class
+
+spring-security/target/classes/br/com/springsecurity/precificacao/controllers/UsuarioController.class
+
+spring-security/target/classes/br/com/springsecurity/precificacao/models/Pessoa.class
+
+spring-security/target/classes/br/com/springsecurity/precificacao/repositories/GerenteRepository.class
+
+spring-security/target/classes/br/com/springsecurity/precificacao/repositories/UsuarioRepository.class
+
+spring-security/target/classes/br/com/springsecurity/precificacao/services/implementation/GerenteServiceImplementation.class
+
+spring-security/target/classes/br/com/springsecurity/precificacao/services/implementation/UsuarioServiceImplementation.class

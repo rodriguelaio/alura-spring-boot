@@ -44,6 +44,7 @@ public class UsuarioServiceImplementation implements UsuarioService {
     @Override
     @Transactional
     public Usuario save(Usuario usuario) {
+        usuario.setNewId(usuarioRepository.getUsuarioNewId());
         return usuarioRepository.save(usuario);
     }
 

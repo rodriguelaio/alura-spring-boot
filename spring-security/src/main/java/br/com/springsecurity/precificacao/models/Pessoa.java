@@ -14,13 +14,13 @@ import java.io.Serializable;
 public class Pessoa implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.TABLE)
+//    @GeneratedValue(strategy = GenerationType.TABLE)
     private Long id;
 
     @NotBlank
     private String nomeCompleto;
 
-    public void setIdAsNull() {
-        this.id = null;
+    public void setNewId(Long newId) {
+        this.id = newId;
     }
 }
