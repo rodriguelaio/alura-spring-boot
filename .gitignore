@@ -16,3 +16,5 @@ spring-security/target/classes/br/com/springsecurity/precificacao/services/imple
 spring-security/target/classes/br/com/springsecurity/precificacao/services/implementation/UsuarioServiceImplementation.class
 
 .DS_Store
+
+spring-security/target/classes/br/com/springsecurity/precificacao/security/SecurityConfigurations.class
