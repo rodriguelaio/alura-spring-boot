@@ -14,3 +14,5 @@ spring-security/target/classes/br/com/springsecurity/precificacao/repositories/U
 spring-security/target/classes/br/com/springsecurity/precificacao/services/implementation/GerenteServiceImplementation.class
 
 spring-security/target/classes/br/com/springsecurity/precificacao/services/implementation/UsuarioServiceImplementation.class
+
+.DS_Store
