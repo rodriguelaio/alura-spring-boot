@@ -28,8 +28,9 @@ public class SecurityConfigurations extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
-                .antMatchers(HttpMethod.GET, "/gerentes").permitAll()
-                .anyRequest().authenticated()
-                .and().formLogin();
+                .antMatchers(HttpMethod.GET, "/gerentes").permitAll() //Faço a liberação de todos os metodos GET da rota /gerentes
+                .antMatchers(HttpMethod.GET, "/gerentes/**").permitAll() //Como meu endpoint tem um caminho antes da variavel, preciso usar ** ao inves de *
+                .anyRequest().authenticated() //qualquer outra rota precisa de autenticação para ser acessada
+                .and().formLogin(); //o spring exibe um formulário de login e senha
     }
 }

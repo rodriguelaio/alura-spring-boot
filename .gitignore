@@ -18,3 +18,11 @@ spring-security/target/classes/br/com/springsecurity/precificacao/services/imple
 .DS_Store
 
 spring-security/target/classes/br/com/springsecurity/precificacao/security/SecurityConfigurations.class
+
+spring-security/target/classes/br/com/springsecurity/precificacao/models/Perfil.class
+
+spring-security/target/classes/br/com/springsecurity/precificacao/models/Perfil$PerfilBuilder.class
+
+spring-security/target/classes/br/com/springsecurity/precificacao/models/Usuario.class
+
+spring-security/target/classes/br/com/springsecurity/precificacao/models/Usuario$UsuarioBuilder.class
