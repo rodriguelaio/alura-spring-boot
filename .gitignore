@@ -26,3 +26,7 @@ spring-security/target/classes/br/com/springsecurity/precificacao/models/Perfil$
 spring-security/target/classes/br/com/springsecurity/precificacao/models/Usuario.class
 
 spring-security/target/classes/br/com/springsecurity/precificacao/models/Usuario$UsuarioBuilder.class
+
+spring-security/target/classes/br/com/springsecurity/precificacao/security/AutenticacaoService.class
+
+spring-security/target/classes/data.sql

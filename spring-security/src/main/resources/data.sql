@@ -37,6 +37,6 @@ INSERT INTO gerente_grupo_de_produto (gerente_id, grupo_de_produto_id) values (0
 INSERT INTO gerente_grupo_de_produto (gerente_id, grupo_de_produto_id) values (000005, 0004);
 
 
---INSERT INTO gerente_produto (gerente_id, produto_id) values (000001, 000000007);
+INSERT INTO usuario (id, nome_completo, username, password) values (000001, 'Usuario A', 'usuarioa', '$2a$10$WQekasVVpKWfA4GUVtt6NeqDbRJ0N.IGIYbV3MbDWjmj8qyYg4Hxy');
 --INSERT INTO gerente_produto (gerente_id, produto_id) values (000001, 000000008);
 --INSERT INTO gerente_produto (gerente_id, produto_id) values (000002, 000000009);
