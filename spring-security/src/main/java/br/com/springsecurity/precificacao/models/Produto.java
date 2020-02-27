@@ -6,6 +6,7 @@ import lombok.*;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
+import java.io.Serializable;
 
 @Entity
 @Builder
@@ -13,7 +14,7 @@ import javax.validation.constraints.NotBlank;
 @AllArgsConstructor
 @Setter
 @Getter
-public class Produto {
+public class Produto implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -31,7 +32,7 @@ public class Produto {
 
     @JsonIgnore
     public boolean isGrupoDeProdutosEmpty(){
-        return this.grupoDeProdutos.equals(null);
+        return this.grupoDeProdutos == null;
     }
 
     public void setIdAsNull() {
