@@ -10,8 +10,6 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
-import java.util.Arrays;
-
 @EnableWebSecurity
 @Configuration
 public class SecurityConfigurations extends WebSecurityConfigurerAdapter {
@@ -19,7 +17,7 @@ public class SecurityConfigurations extends WebSecurityConfigurerAdapter {
     private AutenticacaoService autenticacaoService;
 
     @Autowired
-    public SecurityConfigurations(AutenticacaoService autenticacaoService){
+    public SecurityConfigurations(AutenticacaoService autenticacaoService) {
         this.autenticacaoService = autenticacaoService;
     }
 
@@ -44,8 +42,4 @@ public class SecurityConfigurations extends WebSecurityConfigurerAdapter {
                 .anyRequest().authenticated() //qualquer outra rota precisa de autenticação para ser acessada
                 .and().formLogin(); //o spring exibe um formulário de login e senha
     }
-
-//    public static void main(String[] args) {
-//        System.out.println(new BCryptPasswordEncoder().encode("123456"));
-//    }
 }

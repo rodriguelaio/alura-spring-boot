@@ -14,7 +14,7 @@ import static org.springframework.util.CollectionUtils.isEmpty;
 @AllArgsConstructor
 @Setter
 @Getter
-public class Gerente extends Pessoa{
+public class Gerente extends Pessoa {
 
     @OneToMany
     @JoinColumn(name = "gerente_id") //Desse modo, o hibernate não cria uma tabela intermediária para a amarração...
