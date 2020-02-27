@@ -68,3 +68,11 @@ spring-security/.idea/sonarlint/issuestore/d/1/d133d9339e12db76bceaf29ace604f258
 spring-security/.idea/sonarlint/issuestore/index.pb
 
 spring-security/target/classes/br/com/springsecurity/precificacao/security/SecurityConfigurations$MinimumOperations.class
+
+spring-security/target/classes/br/com/springsecurity/precificacao/models/GrupoDeProdutos.class
+
+spring-security/target/classes/br/com/springsecurity/precificacao/models/GrupoDeProdutos$GrupoDeProdutosBuilder.class
+
+spring-security/target/classes/br/com/springsecurity/precificacao/models/Produto.class
+
+spring-security/target/classes/br/com/springsecurity/precificacao/models/Produto$ProdutoBuilder.class
