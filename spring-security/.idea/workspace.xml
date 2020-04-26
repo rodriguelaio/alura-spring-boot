@@ -2,62 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1da7b74d-d053-439b-b9c5-ddd2df06cf53" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/b/7bbd242b477d9d7d4a4868c56078067f8553ea24" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/d/dd99291d8aed4c285a1ea3c78886111f4eef2f3d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/spring-security.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-security.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/PrecificacaoApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/controllers/GerenteController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/controllers/GrupoDeProdutosController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/controllers/ProdutoController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/controllers/UsuarioController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/enums/TipoDeProdutos.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/models/Gerente.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/models/GrupoDeProdutos.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/models/Perfil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/models/Pessoa.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/models/Produto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/models/Usuario.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/repositories/GerenteRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/repositories/GrupoDeProdutosRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/repositories/ProdutoRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/repositories/UsuarioRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/security/AutenticacaoService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/security/SecurityConfigurations.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/services/GerenteService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/services/GrupoDeProdutosService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/services/ProdutoService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/services/UsuarioService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/services/implementation/GerenteServiceImplementation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/services/implementation/GrupoDeProdutosServiceImplementation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/services/implementation/ProdutoServiceImplementation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/services/implementation/UsuarioServiceImplementation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/utils/PersistGrupoDeProdutosAsAttribute.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/springsecurity/precificacao/PrecificacaoApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/springsecurity/precificacao/controllers/GerenteController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/springsecurity/precificacao/enums/TipoDeProdutos.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/springsecurity/precificacao/models/Gerente$GerenteBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/springsecurity/precificacao/models/Gerente.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/springsecurity/precificacao/models/Usuario$UsuarioBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/springsecurity/precificacao/models/Usuario.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/springsecurity/precificacao/repositories/GrupoDeProdutosRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/springsecurity/precificacao/repositories/ProdutoRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/springsecurity/precificacao/services/GerenteService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/springsecurity/precificacao/services/GrupoDeProdutosService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/springsecurity/precificacao/services/ProdutoService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/springsecurity/precificacao/services/UsuarioService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/springsecurity/precificacao/services/implementation/GrupoDeProdutosServiceImplementation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/springsecurity/precificacao/services/implementation/ProdutoServiceImplementation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/security/SecurityConfigurations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/security/SecurityConfigurations.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,16 +67,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
-      <setting name="path" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="file://$PROJECT_DIR$" />
-      <setting name="debug" value="false" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -258,7 +193,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$USER_HOME$/alura/alura-spring_boot/spring-security/src/main/java/br/com/springsecurity/precificacao/controllers/GerenteController.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/controllers/GerenteController.java</url>
           <line>58</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
