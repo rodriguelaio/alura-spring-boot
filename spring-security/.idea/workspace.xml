@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1da7b74d-d053-439b-b9c5-ddd2df06cf53" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/b/7bbd242b477d9d7d4a4868c56078067f8553ea24" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/d/dd99291d8aed4c285a1ea3c78886111f4eef2f3d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/spring-security.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/PrecificacaoApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/controllers/GerenteController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/controllers/GrupoDeProdutosController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/controllers/ProdutoController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/controllers/UsuarioController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/enums/TipoDeProdutos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/models/Gerente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/models/GrupoDeProdutos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/models/Perfil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/models/Pessoa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/models/Produto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/models/Usuario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/repositories/GerenteRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/repositories/GrupoDeProdutosRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/repositories/ProdutoRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/repositories/UsuarioRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/security/AutenticacaoService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/security/SecurityConfigurations.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/services/GerenteService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/services/GrupoDeProdutosService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/services/ProdutoService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/services/UsuarioService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/services/implementation/GerenteServiceImplementation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/services/implementation/GrupoDeProdutosServiceImplementation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/services/implementation/ProdutoServiceImplementation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/services/implementation/UsuarioServiceImplementation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/springsecurity/precificacao/utils/PersistGrupoDeProdutosAsAttribute.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/springsecurity/precificacao/PrecificacaoApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/springsecurity/precificacao/controllers/GerenteController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/springsecurity/precificacao/enums/TipoDeProdutos.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/springsecurity/precificacao/models/Gerente$GerenteBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/springsecurity/precificacao/models/Gerente.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/springsecurity/precificacao/models/Usuario$UsuarioBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/springsecurity/precificacao/models/Usuario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/springsecurity/precificacao/repositories/GrupoDeProdutosRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/springsecurity/precificacao/repositories/ProdutoRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/springsecurity/precificacao/services/GerenteService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/springsecurity/precificacao/services/GrupoDeProdutosService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/springsecurity/precificacao/services/ProdutoService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/springsecurity/precificacao/services/UsuarioService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/springsecurity/precificacao/services/implementation/GrupoDeProdutosServiceImplementation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/springsecurity/precificacao/services/implementation/ProdutoServiceImplementation.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1XXToQgtTXasRnGpe6OBcoFlMSs" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunManager" selected="Application.SecurityConfigurations">
+    <configuration name="PrecificacaoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.springsecurity.precificacao.PrecificacaoApplication" />
+      <module name="spring-security" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.springsecurity.precificacao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrecificacaoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.springsecurity.precificacao.PrecificacaoApplication" />
+      <module name="spring-security" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.springsecurity.precificacao.security.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SecurityConfigurations" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.springsecurity.precificacao.security.SecurityConfigurations" />
+      <module name="spring-security" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.springsecurity.precificacao.security.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.PrecificacaoApplication" />
+      <item itemvalue="Application.SecurityConfigurations" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SecurityConfigurations" />
+        <item itemvalue="Application.PrecificacaoApplication" />
+        <item itemvalue="Application.PrecificacaoApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1da7b74d-d053-439b-b9c5-ddd2df06cf53" name="Default Changelist" comment="" />
+      <created>1581191614057</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581191614057</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="423" y="173" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581989440130">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state x="423" y="173" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.977/0.23.1920.977@0.23.1920.977" timestamp="1581989440130" />
+    <state x="423" y="173" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.977@0.23.1920.977" timestamp="1581191900966" />
+    <state x="773" y="228" key="#com.intellij.ide.util.MemberChooser" timestamp="1581987735269">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state x="773" y="228" key="#com.intellij.ide.util.MemberChooser/0.23.1920.977/0.23.1920.977@0.23.1920.977" timestamp="1581987735269" />
+    <state x="773" y="228" key="#com.intellij.ide.util.MemberChooser/0.23.1920.977@0.23.1920.977" timestamp="1581259252970" />
+    <state x="696" y="302" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1581989421079">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state x="696" y="302" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1920.977/0.23.1920.977@0.23.1920.977" timestamp="1581989421079" />
+    <state x="547" y="193" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1581988887238">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state x="547" y="193" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.23.1920.977/0.23.1920.977@0.23.1920.977" timestamp="1581988887238" />
+    <state x="748" y="424" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1581257839049">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state x="748" y="424" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.23.1920.977@0.23.1920.977" timestamp="1581257839049" />
+    <state width="1878" height="390" key="GridCell.Tab.0.bottom" timestamp="1587209942948">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state width="1832" height="263" key="GridCell.Tab.0.bottom/0.23.1920.977/0.23.1920.977@0.23.1920.977" timestamp="1581989450134" />
+    <state width="1878" height="390" key="GridCell.Tab.0.bottom/0.23.1920.977@0.23.1920.977" timestamp="1587209942948" />
+    <state width="1878" height="390" key="GridCell.Tab.0.center" timestamp="1587209942947">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state width="1832" height="263" key="GridCell.Tab.0.center/0.23.1920.977/0.23.1920.977@0.23.1920.977" timestamp="1581989450131" />
+    <state width="1878" height="390" key="GridCell.Tab.0.center/0.23.1920.977@0.23.1920.977" timestamp="1587209942947" />
+    <state width="1878" height="390" key="GridCell.Tab.0.left" timestamp="1587209942947">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state width="1832" height="263" key="GridCell.Tab.0.left/0.23.1920.977/0.23.1920.977@0.23.1920.977" timestamp="1581989450129" />
+    <state width="1878" height="390" key="GridCell.Tab.0.left/0.23.1920.977@0.23.1920.977" timestamp="1587209942947" />
+    <state width="1878" height="390" key="GridCell.Tab.0.right" timestamp="1587209942948">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state width="1832" height="263" key="GridCell.Tab.0.right/0.23.1920.977/0.23.1920.977@0.23.1920.977" timestamp="1581989450133" />
+    <state width="1878" height="390" key="GridCell.Tab.0.right/0.23.1920.977@0.23.1920.977" timestamp="1587209942948" />
+    <state width="1878" height="320" key="GridCell.Tab.1.bottom" timestamp="1584199947624">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state width="1832" height="325" key="GridCell.Tab.1.bottom/0.23.1920.977/0.23.1920.977@0.23.1920.977" timestamp="1581987360950" />
+    <state width="1878" height="320" key="GridCell.Tab.1.bottom/0.23.1920.977@0.23.1920.977" timestamp="1584199947624" />
+    <state width="1878" height="320" key="GridCell.Tab.1.center" timestamp="1584199947620">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state width="1832" height="325" key="GridCell.Tab.1.center/0.23.1920.977/0.23.1920.977@0.23.1920.977" timestamp="1581987360947" />
+    <state width="1878" height="320" key="GridCell.Tab.1.center/0.23.1920.977@0.23.1920.977" timestamp="1584199947620" />
+    <state width="1878" height="320" key="GridCell.Tab.1.left" timestamp="1584199947617">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state width="1832" height="325" key="GridCell.Tab.1.left/0.23.1920.977/0.23.1920.977@0.23.1920.977" timestamp="1581987360947" />
+    <state width="1878" height="320" key="GridCell.Tab.1.left/0.23.1920.977@0.23.1920.977" timestamp="1584199947617" />
+    <state width="1878" height="320" key="GridCell.Tab.1.right" timestamp="1584199947622">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state width="1832" height="325" key="GridCell.Tab.1.right/0.23.1920.977/0.23.1920.977@0.23.1920.977" timestamp="1581987360948" />
+    <state width="1878" height="320" key="GridCell.Tab.1.right/0.23.1920.977@0.23.1920.977" timestamp="1584199947622" />
+    <state x="468" y="150" key="SettingsEditor" timestamp="1581191660077">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state x="468" y="150" key="SettingsEditor/0.23.1920.977@0.23.1920.977" timestamp="1581191660077" />
+    <state x="569" y="241" width="782" height="540" key="find.popup" timestamp="1583422047809">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state x="569" y="241" width="782" height="540" key="find.popup/0.23.1920.977@0.23.1920.977" timestamp="1583422047809" />
+    <state x="389" y="134" key="new project wizard" timestamp="1584195981745">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state x="389" y="134" key="new project wizard/0.23.1920.977@0.23.1920.977" timestamp="1584195981745" />
+    <state x="600" y="236" key="search.everywhere.popup" timestamp="1582766240696">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state x="600" y="236" key="search.everywhere.popup/0.23.1920.977/0.23.1920.977@0.23.1920.977" timestamp="1581988689128" />
+    <state x="600" y="236" key="search.everywhere.popup/0.23.1920.977@0.23.1920.977" timestamp="1582766240696" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$USER_HOME$/alura/alura-spring_boot/spring-security/src/main/java/br/com/springsecurity/precificacao/controllers/GerenteController.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="Double.valueOf(2.00000 / 5.000000).doubleValue()" language="JAVA" custom="java.math.BigDecimal" />
+        <watch expression="j | 4" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
